@@ -10,7 +10,7 @@ async function callApi() {
   const resp = await axios.get("https://randomuser.me/api/");
 }
 
-if (resp.data.results.gender == female) {
+if ((resp.data.results.gender = female)) {
   genderIcon.innerText = "👩";
 } else {
   genderIcon.innerText = "👨";
